@@ -9,7 +9,7 @@ namespace StringFormatter
 {
     public static class StringExtensions
     {
-        public static string ToCommaSepatatedList(this string[] items)
+        public static string ToCommaSeparatedList(this string[] items)
         {
             if (items == null || items.Length < 1)
             { 

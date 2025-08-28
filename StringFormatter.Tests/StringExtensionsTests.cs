@@ -10,7 +10,7 @@ namespace StringFormatter.Tests
         {
             string[] dummyStringList = null;
 
-            dummyStringList.ToCommaSepatatedList().ShouldBe("");
+            dummyStringList.ToCommaSeparatedList().ShouldBe("");
         }
 
         [Theory]
@@ -18,7 +18,7 @@ namespace StringFormatter.Tests
         [InlineData("\'Matt\',\'Ryan\'", new string[] { "Matt", "Ryan" })]
         public void ShouldReturnFormattedStringsAsExpected(string expectedString, string[] data)
         {
-            data.ToCommaSepatatedList().ShouldBe(expectedString);
+            data.ToCommaSeparatedList().ShouldBe(expectedString);
         }
     }
 }
